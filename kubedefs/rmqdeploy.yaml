@@ -23,11 +23,11 @@ spec:
           env:
             - name: RABBITMQ_DEFAULT_USER
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   name: app-secret
                   key: rmq-pass
             - name: RABBITMQ_DEFAULT_PASS
               valueFrom:
-                configMapKeyRef:
+                secretKeyRef:
                   name: app-secret
                   key: rmq-pass
